@@ -1,9 +1,7 @@
 {
-    "output_directory":  "D:\\25294\\desktop\\工作日志",
-    "sample_file":  "D:\\25294\\desktop\\日志agent\\work-log\\references\\plain-language-sample.md",
-    "data_directory":  ".work-log-data",
-    "file_name_pattern":  "{date}.md",
-    "salutation":  "各位领导好，",
-    "introduction":  "本人今日工作如下：",
-    "detailed_file_name_pattern":  "{date}_详细工作记录.md"
+    "output_directory": "D:\\25294\\desktop\\工作日志",
+    "sample_file": "D:\\25294\\desktop\\日志agent\\work-log\\references\\plain-language-sample.md",
+    "data_directory": ".work-log-data",
+    "file_name_pattern": "{date}.md",
+    "detailed_file_name_pattern": "{date}_详细工作记录.md"
 }

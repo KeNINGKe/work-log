@@ -1,11 +1,17 @@
 ---
 name: work-log
 description: "Creates and updates two factual daily Markdown work logs shared by Codex and Claude Code: an easy-to-understand manager-facing summary and a complete technical record. In Codex desktop it gathers confirmed work from all Codex tasks active that day. Use whenever the user says ‘结束工作’, ‘整理日志’, ‘写工作日志’, ‘生成工作日志’, asks to summarize today's work across windows, or wants project work, learning, or colleague communication recorded in the daily log."
+metadata:
+  version: "2026.10.22"
 ---
 
 # Work Log
 
 Create two factual daily work logs through the bundled deterministic writer: an easy-to-understand manager-facing log and a comprehensive detailed work record.
+
+## Output format
+
+Output only the work summary and detailed work record. Start the simple log directly with the first numbered project/topic. Do not add salutations, greetings, introductory sentences, or closing remarks, even if an older sample or config includes them. The detailed log keeps its dated heading and project sections, without a boilerplate introduction.
 
 ## Plain-language requirement
 

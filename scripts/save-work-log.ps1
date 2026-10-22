@@ -246,12 +246,7 @@ try {
         return
     }
 
-    $salutation = Normalize-Line (Get-PropertyValue $config 'salutation' '各位领导好，')
-    $introduction = Normalize-Line (Get-PropertyValue $config 'introduction' '本人本日工作如下：')
     $lines = New-Object System.Collections.Generic.List[string]
-    $lines.Add($salutation)
-    $lines.Add('')
-    $lines.Add($introduction)
 
     $topicNumber = 1
     # 简版要点不设条数上限（2026-09-08 用户要求取消每日 5 条与每主题条数限制），
@@ -275,7 +270,6 @@ try {
     $detailedLines = New-Object System.Collections.Generic.List[string]
     $detailedLines.Add("# $date 详细工作记录")
     $detailedLines.Add('')
-    $detailedLines.Add('本记录汇总当日已确认的工作进展、问题处理、产出与验证结果。')
     $detailedTopicNumber = 1
     foreach ($groupKey in $groups.Keys) {
         $group = $groups[$groupKey]
